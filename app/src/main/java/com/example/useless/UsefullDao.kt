@@ -9,10 +9,10 @@ interface UsefullDao {
     suspend fun insertUseful(useful: Usefull)
 
     @Query("SELECT * FROM useful" )
-    suspend fun getAllUsefull(): LiveData<List<Usefull>>
+     fun getAllUsefull(): LiveData<List<Usefull>>
 
     @Query("SELECT * FROM useful WHERE id = :useful_id")
-    suspend fun getAUseful(useful_id:Int)
+     fun getAUseful(useful_id:Int): Usefull
 
     @Update
     suspend fun udpateUseful(useful: Usefull)

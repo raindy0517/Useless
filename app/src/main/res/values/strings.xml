@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Useless</string>
+    <string name="textViewName">Name</string>
+    <string name="textViewAge">Age</string>
 </resources>
